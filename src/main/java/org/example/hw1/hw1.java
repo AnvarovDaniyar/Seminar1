@@ -15,5 +15,6 @@ public class hw1 {
         }
         System.out.println(revText.trim());
         scanner.close();
+
     }
 }

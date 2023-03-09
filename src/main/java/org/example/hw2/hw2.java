@@ -23,6 +23,7 @@ public class hw2 {
         }
         System.out.printf("Сумма равна: ", sum);
         scanner.close();
+
     }
 }
 
