@@ -1,4 +1,4 @@
-package org.example.cw4;
+package org.example.seminar1.cw4;
 
 public class ex4 {
     public static void main(String[] args) {

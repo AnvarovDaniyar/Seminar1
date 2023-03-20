@@ -1,4 +1,4 @@
-package org.example.hw2;
+package org.example.HomeWork1.hw2;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -23,6 +23,7 @@ public class hw2 {
         }
         System.out.printf("Сумма равна: ", sum);
         scanner.close();
+
     }
 }
 

@@ -1,4 +1,4 @@
-package org.example.hw1;
+package org.example.HomeWork1.hw1;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -15,5 +15,6 @@ public class hw1 {
         }
         System.out.println(revText.trim());
         scanner.close();
+
     }
 }

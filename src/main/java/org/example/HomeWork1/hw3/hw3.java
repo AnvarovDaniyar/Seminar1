@@ -1,4 +1,4 @@
-package org.example.hw3;
+package org.example.HomeWork1.hw3;
 
 import java.util.Scanner;
 
@@ -51,6 +51,5 @@ public class hw3 {
             s.append(res);
         }
         return s.reverse().toString();
-
     }
 }
