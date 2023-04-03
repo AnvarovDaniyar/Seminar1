@@ -1,8 +1,10 @@
 package org.example.HomeWork4.hw2;
 
 import java.util.Deque;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Stack;
+
 
 public class hw2 {
     public static void main(String[] args) {
@@ -16,20 +18,32 @@ public class hw2 {
     }
 
     private static boolean charCeck(String text) {
-        Stack<Character> stack = new Stack<>();
-        for (char i : text.toCharArray()) {
-            if (i == '(')
-                stack.push(')');
-                else if (i == '{')
-                    stack.push('}');
-                else if (i == '[')
-                    stack.push(']');
-                else if (stack.isEmpty() || stack.pop() != i)
-                    return false;
+        Stack<Character> stack = new Stack<Character>();
+        HashMap<Character, Character> complement =
+                new HashMap<Character, Character>();
 
+        complement.put(')', '(');
+        complement.put(']', '[');
+        complement.put('}', '{');
 
+        for (Character c : text.toCharArray()) {
+            switch(c) {
+                case '(':
+                case '{':
+                case '[':
+                    stack.push(c);
+                    break;
+                case ')':
+                case '}':
+                case ']':
+                    if (stack.isEmpty() || stack.pop() != complement.get(c)) {
+                        return false;
+                    }
+            }
         }
-        return true;
+
+        return stack.isEmpty();
     }
+
 }
 
