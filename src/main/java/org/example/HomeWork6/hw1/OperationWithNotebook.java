@@ -128,8 +128,8 @@ public class OperationWithNotebook {
 
     public Set<String> quantitativeSelection(){
         Set<String> set = new HashSet<>();
-        set.add("amountRAM");
-        set.add("price");
+        set.add("ОЗУ");
+        set.add("Цвет");
 
         return set;
     }
@@ -137,9 +137,9 @@ public class OperationWithNotebook {
     public Set<String> stringSelection(){
         Set<String> set = new HashSet<>();
 
-        set.add("name");
-        set.add("operatingSystem");
-        set.add("model");
+        set.add("Название");
+        set.add("РазмерЖД");
+        set.add("Цвет");
 
         return set;
     }
@@ -153,7 +153,7 @@ public class OperationWithNotebook {
             if (operation.equals("3")){
                 flag = false;
                 scanner.close();
-                continue;
+
             }else if(operation.equals("1")){
 
                 int criterion = getCriteria();
