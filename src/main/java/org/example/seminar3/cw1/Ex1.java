@@ -33,6 +33,7 @@ public class Ex1 {
 
         System.out.println("sum = "+ sumVolume);
         System.out.println(" country : "+country);
+        System.out.println(itemsList);
     }
 }
 
