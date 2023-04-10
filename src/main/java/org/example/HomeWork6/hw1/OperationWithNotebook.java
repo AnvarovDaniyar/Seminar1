@@ -23,15 +23,15 @@ public class OperationWithNotebook {
         for (Criterion criterion : criterionList){
             Object valueNotebook = null;
 
-            if (criterion.property.equals("name")){
+            if (criterion.property.equals("Название")){
                 valueNotebook = notebook.getНазвание();
-            }else if (criterion.property.equals("amountRAM")){
+            }else if (criterion.property.equals("ОЗУ")){
                 valueNotebook = notebook.getОЗУ();
-            }else if (criterion.property.equals("operatingSystem")){
+            }else if (criterion.property.equals("ОбъемЖД")){
                 valueNotebook = notebook.getОбъемЖД();
-            }else if (criterion.property.equals("price")){
+            }else if (criterion.property.equals("ОперационнаяСистема")){
                 valueNotebook = notebook.getОперационнаяСистема();
-            }else if (criterion.property.equals("model")){
+            }else if (criterion.property.equals("Цвет")){
                 valueNotebook = notebook.getЦвет();
             }else {
                 continue;
@@ -91,11 +91,11 @@ public class OperationWithNotebook {
     public Map<String, String> descriptionsProperties(){
         Map<String, String> map = new HashMap<>();
 
-        map.put("name", "Наименование");
-        map.put("amountRAM", "Объем оперативной памяти");
-        map.put("operatingSystem", "Операционная система");
-        map.put("price", "цена");
-        map.put("model", "модель");
+        map.put("Название", "Наименование");
+        map.put("Озу", "Объем оперативной памяти");
+        map.put("РазмерЖД", "РазмерЖД");
+        map.put("Операционнаясистема", "Операционная система");
+        map.put("Цвет", "Цвет");
 
         return map;
 
@@ -103,11 +103,11 @@ public class OperationWithNotebook {
 
     public List<String> propertiesForFilter(){
         List<String> list = new ArrayList<>();
-        list.add("name");
-        list.add("amountRAM");
-        list.add("operatingSystem");
-        list.add("price");
-        list.add("model");
+        list.add("Название");
+        list.add("ОЗУ");
+        list.add("РазмерЖД");
+        list.add("Операционнаясистема");
+        list.add("Цвет");
 
         return list;
     }

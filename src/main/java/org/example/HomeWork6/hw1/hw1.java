@@ -19,16 +19,4 @@ public class hw1 {
         operation.start();
         System.out.println(set);
     }
-
-   /** private static void sreiben() {
-        Map<String, Integer> requirements = new HashMap<>();
-        System.out.println("Введите минимальный размер ОЗУ: ");
-        Scanner scanner = new Scanner(System.in);
-        requirements.put("ОЗУ", scanner.nextInt());
-        System.out.println("Введите минимальный Объем ЖД: ");
-        requirements.put("ОбъемЖД", scanner.nextInt());
-        System.out.println("Введите желаемую Операционную систему: ");
-        requirements.put("ОперационнаяСистема", );
-
-    }**/
 }
